@@ -1,0 +1,34 @@
+{
+  "manifest_version": 2,
+  "name": "Linkify",
+  "version": "0.1",
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": ["content.js"],
+      "html": ["popup.html"],
+      "all_frames":true
+    }
+  ],
+  "background": {
+    "scripts": ["html_handler.js","background.js"],
+    "persistent": false
+  },
+  "permissions": [ "tabs", "storage" ],
+  "browser_action": {
+    "default_icon": "logo2.png",
+    "default_popup": "sketch/index.html",
+    "default_title": "Lookup a definition!"
+  },
+  "options_page": "sketch/index.html",
+
+  "options_ui": {
+    "page": "sketch/index.html",
+    "open_in_tab": false
+  },
+
+  "web_accessible_resources": ["logo.png"]
+
+}

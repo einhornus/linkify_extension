@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Linkify settings</title>
+    <style>
+        body {
+            width: 600px;
+        }
+
+
+    </style>
+
+    <style>
+        body {
+            background-color: var(--primary-color);
+        }
+
+        p, textarea, input {
+            font-size: 15px;
+            color: var(--secondary-color);
+            background-color: var(--primary-color);
+        }
+
+
+        table.reverso_table td {
+            width: 50%;
+            overflow: hidden;
+            vertical-align: top;
+            border: 1px dotted var(--secondary-color);
+        }
+
+
+        :root {
+            --primary-color: #333333;
+            --secondary-color: white;
+        }
+
+
+        a:link {
+            color: cyan;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: cyan;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: cyan;
+            text-decoration: underline
+        }
+
+        a.normal:link {
+            color: #dddddd;
+            text-decoration: none;
+        }
+
+        a.normal:visited {
+            color: #dddddd;
+            text-decoration: none;
+        }
+
+        a.normal:hover {
+            color: #dddddd;
+            text-decoration: underline
+        }
+
+        table {
+            width: 100%;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        table.center td {
+            width: 50%;
+            overflow: hidden;
+            vertical-align: top;
+            border: 1px dotted var(--secondary-color);
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+<style>
+    /* HIDE RADIO */
+    [type=radio] {
+        position: absolute;
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    /* IMAGE STYLES */
+    [type=radio] + img {
+        cursor: pointer;
+    }
+
+    /* CHECKED STYLES */
+    [type=radio]:checked + img {
+        outline: 4px solid #ffff55;
+    }
+</style>
+
+
+<div>
+    <h1 style="color: white">Target language</h1>
+
+
+    <label>
+        <input type="radio" id="en_t" name='langs2' checked>
+        <img src="images/flags/en.svg" width="50px" height="50px">
+    </label>
+
+    <label>
+        <input type="radio" id="de_t" name='langs2'>
+        <img src="images/flags/de.svg" width="50px" height="50px">
+    </label>
+
+
+    <label>
+        <input type="radio" id="fr_t" name='langs2'>
+        <img src="images/flags/fr.svg" width="50px" height="50px">
+    </label>
+
+
+    <label>
+        <input type="radio" id="ru_t" name='langs2'>
+        <img src="images/flags/ru.svg" width="50px" height="50px">
+    </label>
+
+
+
+    <label>
+        <input type="radio" id="nl_t" name='langs2'>
+        <img src="images/flags/nl.svg" width="50px" height="50px">
+    </label>
+
+
+    <label>
+        <input type="radio" id="zh_t" name='langs2'>
+        <img src="images/flags/zh.svg" width="50px" height="50px">
+    </label>
+
+
+</div>
+
+
+<div>
+    <h1 style="color: white">Native language</h1>
+
+
+    <label>
+        <input type="radio" id="en_n" name='langs' checked>
+        <img src="images/flags/en.svg" width="50px" height="50px">
+    </label>
+
+
+    <label>
+        <input type="radio" id="es_n" name='langs'>
+        <img src="images/flags/es.svg" width="50px" height="50px">
+    </label>
+
+
+    <label>
+        <input type="radio" id="de_n" name='langs'>
+        <img src="images/flags/de.svg" width="50px" height="50px">
+    </label>
+
+
+    <label>
+        <input type="radio" id="fr_n" name='langs'>
+        <img src="images/flags/fr.svg" width="50px" height="50px">
+    </label>
+
+
+    <label>
+        <input type="radio" id="ru_n" name='langs'>
+        <img src="images/flags/ru.svg" width="50px" height="50px">
+    </label>
+
+
+    <label>
+        <input type="radio" id="pt_n" name='langs'>
+        <img src="images/flags/pt.svg" width="50px" height="50px">
+    </label>
+
+
+    <label>
+        <input type="radio" id="it_n" name='langs'>
+        <img src="images/flags/it.svg" width="50px" height="50px">
+    </label>
+
+
+    <label>
+        <input type="radio" id="nl_n" name='langs'>
+        <img src="images/flags/nl.svg" width="50px" height="50px">
+    </label>
+
+
+    <label>
+        <input type="radio" id="zh_n" name='langs'>
+        <img src="images/flags/zh.svg" width="50px" height="50px">
+    </label>
+
+
+</div>
+
+
+<script type="text/javascript" src="index.js"></script>
+
+</body>
+</html>
